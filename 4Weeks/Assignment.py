@@ -49,3 +49,22 @@ if coin == 0 :
 else:
     print("뒷면입니다.")
 print("게임이 종료되었습니다.")
+
+# 7.  elif 문 
+num = int(input("정수를 입력하시오 : "))
+if num > 0 :
+    print("양수입니다.")
+elif num == 0:
+    print("0입니다.")
+else :
+    print("음수입니다.")
+
+# 8. if - else 문 안에 if - else 문 넣기
+num = int(input("정수를 입력하시오 : "))
+if num >= 0 :
+    if num == 0 :
+        print("0입니다.")
+    else : 
+        print("양수입니다.")
+else :
+    print("음수입니다.")
