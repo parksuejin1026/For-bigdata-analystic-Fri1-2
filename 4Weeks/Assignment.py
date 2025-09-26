@@ -68,3 +68,29 @@ if num >= 0 :
         print("양수입니다.")
 else :
     print("음수입니다.")
+
+# 9. 
+ID = input("아이디를 입력하시오 : ")
+if (ID == "ilovepython") :
+    PW = input("비밀번호를 입력해주세요")
+    if (PW == "password") :
+        print("환영합니다. ilovepython님")
+    else :
+        print("비밀번호가 틀립니다.")
+else :
+    print("아이디를 찾을 수 없습니다.")
+
+# 10. 복붙
+print("파이썬 주식회사의 방문을 환영합니다!")
+print("파이썬 주식회사의 방문을 환영합니다!")
+print("파이썬 주식회사의 방문을 환영합니다!")
+print("파이썬 주식회사의 방문을 환영합니다!")
+print("파이썬 주식회사의 방문을 환영합니다!")
+
+# 11. for 문
+for i in range(100): 
+    print("파이썬 주식회사의 방문을 환영합니다!")
+    
+# 12. for - in 문
+for i in [1, 2, 3, 4, 5] :
+    print("i = ", i)
