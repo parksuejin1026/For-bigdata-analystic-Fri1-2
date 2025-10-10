@@ -45,7 +45,7 @@ while True:
     if answer == x + y:
         print("잘했어요!")
     else:
-        print("정답은", x+y, "입니다. 다음 번에는 잘할 수 있죠?")
+         print("정답은", x+y, "입니다. 다음 번에는 잘할 수 있죠?")
 
 #6. 무한 루프와 break로 빠져나가기
 while True:
@@ -54,3 +54,17 @@ while True:
         break
 
 print("녹색 신호입니다. 전진하세요!")
+
+#7. continue 사용
+st = 'I love Python Programing'
+for ch in st:
+    if ch in ['a','e','i','o','u', 'A','E','I','O','U']:
+        continue
+    print(ch, end= '')
+
+#8. format() 메서드
+for i in range(2, 11, 2):
+    print('{0:3d} {1:4d} {2:5d}'.format(i, i *i , i*i*i))
+
+#9. 쉼표 출력
+print('{:,}'.format(1234567890))
