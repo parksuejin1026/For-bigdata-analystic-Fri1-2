@@ -30,3 +30,32 @@ print(n1, '+', n2 , '=', t1)
 print(n1, '-', n2 , '=', t2)
 print(n1, '*', n2 , '=', t3)
 print(n1, '/', n2 , '=', t4) 
+
+# 4. 거북이로 사각형 그리기
+import turtle
+
+t = turtle.Turtle()
+t.shape("turtle")
+
+def square(length):
+    for i in range(4):
+        t.forward(length)
+        t.left(90)
+
+square(100)
+square(200)
+square(300)
+turtle.done()
+
+# 5. 주급 계산 프로그램
+def weeklyPay(rate, hour):
+    if (hour >= 30):
+        money = rate * 30 + 1.5 * rate * (hour-30)
+    else:
+        money = rate * hour
+    return money
+
+r = int(input("시급을 입력하시오 : "))
+h = int(input("근무 시간을 입력하시오 : "))
+
+print("주급은 : " + str(weeklyPay(rate = r, hour = h)) + "원 입니다.") # print 쓸 때 + 연산자를 사용할 수 있는 경우는 데이터의 타입이 같을 때만
