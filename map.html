@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_62ed3f0c3a1c51f934e70c14af925fd7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_62ed3f0c3a1c51f934e70c14af925fd7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_62ed3f0c3a1c51f934e70c14af925fd7 = L.map(
+                "map_62ed3f0c3a1c51f934e70c14af925fd7",
+                {
+                    center: [37.31081, 126.8269],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": false,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_62ed3f0c3a1c51f934e70c14af925fd7);
+
+            
+
+        
+    
+            var tile_layer_adde56b91be8f2da0df235ff1da0d135 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_adde56b91be8f2da0df235ff1da0d135.addTo(map_62ed3f0c3a1c51f934e70c14af925fd7);
+        
+    
+            var marker_cluster_e2854e5319d5986767a70f8e05212a99 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_f67f6b28fdba45b56c2df4c9885fac3b = L.marker(
+                [37.31995, 126.8565],
+                {
+}
+            ).addTo(marker_cluster_e2854e5319d5986767a70f8e05212a99);
+        
+    
+            var icon_d2fcd50f656e8962dfb6fc6496a9c560 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_978099843c897bced82cedff1cfd6f94 = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_9dad25b1b67207ff7697ea53e8315c26 = $(`<div id="html_9dad25b1b67207ff7697ea53e8315c26" style="width: 100.0%; height: 100.0%;">단원조각공원</div>`)[0];
+                popup_978099843c897bced82cedff1cfd6f94.setContent(html_9dad25b1b67207ff7697ea53e8315c26);
+            
+        
+
+        marker_f67f6b28fdba45b56c2df4c9885fac3b.bindPopup(popup_978099843c897bced82cedff1cfd6f94)
+        ;
+
+        
+    
+    
+            marker_f67f6b28fdba45b56c2df4c9885fac3b.bindTooltip(
+                `<div>
+                     단원조각공원
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f67f6b28fdba45b56c2df4c9885fac3b.setIcon(icon_d2fcd50f656e8962dfb6fc6496a9c560);
+            
+    
+            var marker_14ea493785ff421f66809d9631df0087 = L.marker(
+                [37.337449, 126.864778],
+                {
+}
+            ).addTo(marker_cluster_e2854e5319d5986767a70f8e05212a99);
+        
+    
+            var icon_823d7652fac9c1dec81cec1c0f347093 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_535d43c27bf5a390509fec0d1d2df257 = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_b7fd7ff8070c24d7667d47cb84bf19f6 = $(`<div id="html_b7fd7ff8070c24d7667d47cb84bf19f6" style="width: 100.0%; height: 100.0%;">안산별빛마을</div>`)[0];
+                popup_535d43c27bf5a390509fec0d1d2df257.setContent(html_b7fd7ff8070c24d7667d47cb84bf19f6);
+            
+        
+
+        marker_14ea493785ff421f66809d9631df0087.bindPopup(popup_535d43c27bf5a390509fec0d1d2df257)
+        ;
+
+        
+    
+    
+            marker_14ea493785ff421f66809d9631df0087.bindTooltip(
+                `<div>
+                     안산별빛마을
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_14ea493785ff421f66809d9631df0087.setIcon(icon_823d7652fac9c1dec81cec1c0f347093);
+            
+    
+            var marker_403e42e46a78bbf8c55b669930c3025b = L.marker(
+                [37.320194, 126.854342],
+                {
+}
+            ).addTo(marker_cluster_e2854e5319d5986767a70f8e05212a99);
+        
+    
+            var icon_67499ad4f914947f22e59dcac79e8036 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_630167ac7038beb034cf405c1a759a88 = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_62b7b29ed117918e3d056d9509e4fb5b = $(`<div id="html_62b7b29ed117918e3d056d9509e4fb5b" style="width: 100.0%; height: 100.0%;">노적봉폭포공원</div>`)[0];
+                popup_630167ac7038beb034cf405c1a759a88.setContent(html_62b7b29ed117918e3d056d9509e4fb5b);
+            
+        
+
+        marker_403e42e46a78bbf8c55b669930c3025b.bindPopup(popup_630167ac7038beb034cf405c1a759a88)
+        ;
+
+        
+    
+    
+            marker_403e42e46a78bbf8c55b669930c3025b.bindTooltip(
+                `<div>
+                     노적봉폭포공원
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_403e42e46a78bbf8c55b669930c3025b.setIcon(icon_67499ad4f914947f22e59dcac79e8036);
+            
+    
+            var marker_9f9b28c1fd138a4ddb2ffac5401b278b = L.marker(
+                [37.29747, 126.8277],
+                {
+}
+            ).addTo(marker_cluster_e2854e5319d5986767a70f8e05212a99);
+        
+    
+            var icon_fde8befca38bb88c9ba277fa635dbfa9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_02536d85e8a40a3c4caa197c7aeb0695 = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_df9d28c69eed845b4a55ceeff4d48028 = $(`<div id="html_df9d28c69eed845b4a55ceeff4d48028" style="width: 100.0%; height: 100.0%;">안산호수공원</div>`)[0];
+                popup_02536d85e8a40a3c4caa197c7aeb0695.setContent(html_df9d28c69eed845b4a55ceeff4d48028);
+            
+        
+
+        marker_9f9b28c1fd138a4ddb2ffac5401b278b.bindPopup(popup_02536d85e8a40a3c4caa197c7aeb0695)
+        ;
+
+        
+    
+    
+            marker_9f9b28c1fd138a4ddb2ffac5401b278b.bindTooltip(
+                `<div>
+                     안산호수공원
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9f9b28c1fd138a4ddb2ffac5401b278b.setIcon(icon_fde8befca38bb88c9ba277fa635dbfa9);
+            
+    
+            var marker_97da29e6258e4e732afdc3b1eb38eaab = L.marker(
+                [37.3269, 126.814],
+                {
+}
+            ).addTo(marker_cluster_e2854e5319d5986767a70f8e05212a99);
+        
+    
+            var icon_c0356e644c9842de863252c150a645eb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2d1545bd51d88c06d3a4e4c3631591ca = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_10084aa7fb2693d8a7c42f6cd8eeaf18 = $(`<div id="html_10084aa7fb2693d8a7c42f6cd8eeaf18" style="width: 100.0%; height: 100.0%;">화랑유원지</div>`)[0];
+                popup_2d1545bd51d88c06d3a4e4c3631591ca.setContent(html_10084aa7fb2693d8a7c42f6cd8eeaf18);
+            
+        
+
+        marker_97da29e6258e4e732afdc3b1eb38eaab.bindPopup(popup_2d1545bd51d88c06d3a4e4c3631591ca)
+        ;
+
+        
+    
+    
+            marker_97da29e6258e4e732afdc3b1eb38eaab.bindTooltip(
+                `<div>
+                     화랑유원지
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_97da29e6258e4e732afdc3b1eb38eaab.setIcon(icon_c0356e644c9842de863252c150a645eb);
+            
+    
+            var marker_50f8da9287d3fa32468cc82bded4710b = L.marker(
+                [37.32564, 126.8134],
+                {
+}
+            ).addTo(marker_cluster_e2854e5319d5986767a70f8e05212a99);
+        
+    
+            var icon_ef9cdd4f232fd17a6c5faa6b1aacfd98 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "pencil",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_865af6d6bcb2040b4a007c328aa3da9d = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_081fe7665eb2f4a7193498f80a4198f8 = $(`<div id="html_081fe7665eb2f4a7193498f80a4198f8" style="width: 100.0%; height: 100.0%;">경기도미술관</div>`)[0];
+                popup_865af6d6bcb2040b4a007c328aa3da9d.setContent(html_081fe7665eb2f4a7193498f80a4198f8);
+            
+        
+
+        marker_50f8da9287d3fa32468cc82bded4710b.bindPopup(popup_865af6d6bcb2040b4a007c328aa3da9d)
+        ;
+
+        
+    
+    
+            marker_50f8da9287d3fa32468cc82bded4710b.bindTooltip(
+                `<div>
+                     경기도미술관
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_50f8da9287d3fa32468cc82bded4710b.setIcon(icon_ef9cdd4f232fd17a6c5faa6b1aacfd98);
+            
+    
+            var marker_6347e21d7f38199492164cbf63057a7c = L.marker(
+                [37.2718, 126.839],
+                {
+}
+            ).addTo(marker_cluster_e2854e5319d5986767a70f8e05212a99);
+        
+    
+            var icon_f7d68ba5f7d3c2756f6c9bb0ea1ed421 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e3ecffe5f465bae1fbf18f315a91f637 = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_70ca2c7c1988380953ee404d66731202 = $(`<div id="html_70ca2c7c1988380953ee404d66731202" style="width: 100.0%; height: 100.0%;">갈대습지공원</div>`)[0];
+                popup_e3ecffe5f465bae1fbf18f315a91f637.setContent(html_70ca2c7c1988380953ee404d66731202);
+            
+        
+
+        marker_6347e21d7f38199492164cbf63057a7c.bindPopup(popup_e3ecffe5f465bae1fbf18f315a91f637)
+        ;
+
+        
+    
+    
+            marker_6347e21d7f38199492164cbf63057a7c.bindTooltip(
+                `<div>
+                     갈대습지공원
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6347e21d7f38199492164cbf63057a7c.setIcon(icon_f7d68ba5f7d3c2756f6c9bb0ea1ed421);
+            
+    
+            var marker_ccae4d9869d0b3b09d620095eb862415 = L.marker(
+                [37.33598, 126.8608],
+                {
+}
+            ).addTo(marker_cluster_e2854e5319d5986767a70f8e05212a99);
+        
+    
+            var icon_c7e3d6d234148151cd136de79ab6044a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "user",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7e5e37fc801589f40e24e5897626be9d = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_352d97001f706536240518882a8aa3c5 = $(`<div id="html_352d97001f706536240518882a8aa3c5" style="width: 100.0%; height: 100.0%;">안산공업고등학교</div>`)[0];
+                popup_7e5e37fc801589f40e24e5897626be9d.setContent(html_352d97001f706536240518882a8aa3c5);
+            
+        
+
+        marker_ccae4d9869d0b3b09d620095eb862415.bindPopup(popup_7e5e37fc801589f40e24e5897626be9d)
+        ;
+
+        
+    
+    
+            marker_ccae4d9869d0b3b09d620095eb862415.bindTooltip(
+                `<div>
+                     안산공업고등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ccae4d9869d0b3b09d620095eb862415.setIcon(icon_c7e3d6d234148151cd136de79ab6044a);
+            
+    
+            var marker_78d7a368b266b2758a3f6cf00c052370 = L.marker(
+                [37.29684, 126.8359],
+                {
+}
+            ).addTo(marker_cluster_e2854e5319d5986767a70f8e05212a99);
+        
+    
+            var icon_e7c5b47c1039282ee17fa53828ff962e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "book",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6213e3d2b068fd42b8496500ea5c4154 = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_f8a61ebe1e68f32b9f9e96151a95a414 = $(`<div id="html_f8a61ebe1e68f32b9f9e96151a95a414" style="width: 100.0%; height: 100.0%;">한양대학교ERICA</div>`)[0];
+                popup_6213e3d2b068fd42b8496500ea5c4154.setContent(html_f8a61ebe1e68f32b9f9e96151a95a414);
+            
+        
+
+        marker_78d7a368b266b2758a3f6cf00c052370.bindPopup(popup_6213e3d2b068fd42b8496500ea5c4154)
+        ;
+
+        
+    
+    
+            marker_78d7a368b266b2758a3f6cf00c052370.bindTooltip(
+                `<div>
+                     한양대학교ERICA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_78d7a368b266b2758a3f6cf00c052370.setIcon(icon_e7c5b47c1039282ee17fa53828ff962e);
+            
+    
+            marker_cluster_e2854e5319d5986767a70f8e05212a99.addTo(map_62ed3f0c3a1c51f934e70c14af925fd7);
+        
+    
+            var circle_a57ded2d5058c3a0bc2d6d6ce952c3ba = L.circle(
+                [37.31381, 126.8606],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_62ed3f0c3a1c51f934e70c14af925fd7);
+        
+    
+        var popup_137912986875f9dcee2a339c9c27b4a2 = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_934185095b3b065e116dd08219e3cdbc = $(`<div id="html_934185095b3b065e116dd08219e3cdbc" style="width: 100.0%; height: 100.0%;">안산식물원</div>`)[0];
+                popup_137912986875f9dcee2a339c9c27b4a2.setContent(html_934185095b3b065e116dd08219e3cdbc);
+            
+        
+
+        circle_a57ded2d5058c3a0bc2d6d6ce952c3ba.bindPopup(popup_137912986875f9dcee2a339c9c27b4a2)
+        ;
+
+        
+    
+    
+            circle_a57ded2d5058c3a0bc2d6d6ce952c3ba.bindTooltip(
+                `<div>
+                     안산식물원
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_c3002556a66ea68dcb65ddefcf42ef62 = L.circle(
+                [37.3189978, 126.8183467],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 150, "stroke": true, "weight": 3}
+            ).addTo(map_62ed3f0c3a1c51f934e70c14af925fd7);
+        
+    
+        var popup_29009574839b91983c45d4f3978746df = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_e7e831c9b50591fa4cde8813154306dc = $(`<div id="html_e7e831c9b50591fa4cde8813154306dc" style="width: 100.0%; height: 100.0%;">와스타디움</div>`)[0];
+                popup_29009574839b91983c45d4f3978746df.setContent(html_e7e831c9b50591fa4cde8813154306dc);
+            
+        
+
+        circle_c3002556a66ea68dcb65ddefcf42ef62.bindPopup(popup_29009574839b91983c45d4f3978746df)
+        ;
+
+        
+    
+    
+            circle_c3002556a66ea68dcb65ddefcf42ef62.bindTooltip(
+                `<div>
+                     와스타디움
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_2026d578c1737dd67cc6c7f7a6d8e338 = L.circle(
+                [37.3144, 126.8591],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.4, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_62ed3f0c3a1c51f934e70c14af925fd7);
+        
+    
+        var popup_4c3134d5a15128ace67a3321f00dfd06 = L.popup({
+  "maxWidth": 100,
+});
+
+        
+            
+                var html_c6ee92981a92e3c53a71ab259b333dfe = $(`<div id="html_c6ee92981a92e3c53a71ab259b333dfe" style="width: 100.0%; height: 100.0%;">성호공원</div>`)[0];
+                popup_4c3134d5a15128ace67a3321f00dfd06.setContent(html_c6ee92981a92e3c53a71ab259b333dfe);
+            
+        
+
+        circle_2026d578c1737dd67cc6c7f7a6d8e338.bindPopup(popup_4c3134d5a15128ace67a3321f00dfd06)
+        ;
+
+        
+    
+    
+            circle_2026d578c1737dd67cc6c7f7a6d8e338.bindTooltip(
+                `<div>
+                     성호공원
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
